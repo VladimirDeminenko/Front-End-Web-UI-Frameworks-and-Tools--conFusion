@@ -1,0 +1,23 @@
+# https://git-scm.com/docs/gitignore
+# https://help.github.com/articles/ignoring-files
+# Example .gitignore files: https://github.com/github/gitignore
+/bower_components/
+/node_modules/
+/css/bootstrap-theme.css.map
+/css/bootstrap-social.css
+/css/bootstrap-theme.css
+/fonts/
+/css/bootstrap.css
+/css/bootstrap-theme.min.css
+/css/font-awesome.min.css
+/css/font-awesome.css
+/css/bootstrap.min.css.map
+/css/bootstrap.min.css
+/css/bootstrap.css.map
+/css/bootstrap-theme.min.css.map
+/etc/
+/images/
+/js/
+/origins/
+/img/
+/tasks/
