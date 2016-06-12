@@ -84,14 +84,14 @@
           <h4 class="modal-title">Login</h4>
         </div>
         <div class="modal-body">
-          <form class="form-inline" class2="form-horizontal" role="form">
+          <form class="form-inline" role="form">
             <div class="form-group">
-              <input type="email" class="form-control col-sm-3" placeholder="Email">
-              <input type="password" class="form-control" placeholder="Password">
+              <input type="email" class="form-control btn-xs" placeholder="Email">
+              <input type="password" class="form-control btn-xs" placeholder="Password">
               <label>
-                <input type="checkbox"> Remember me</label>
-              <button type="submit" class="btn btn-info">Sign In</button>
-              <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <input type="checkbox" class="btn-xs"> Remember me</label>
+              <button type="submit" class="btn btn-info btn-xs">Sign In</button>
+              <button type="button" class="btn btn-default btn-xs" data-dismiss="modal">Cancel</button>
             </div>
           </form>
         </div>
@@ -375,17 +375,17 @@
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script>
-    $(document).ready(function () {
-      $("#mycarousel").carousel({
-        interval: 2000
+      $(document).ready(function () {
+          $("#mycarousel").carousel({
+              interval: 2000
+          });
+          $("#carousel-pause").click(function () {
+              $("#mycarousel").carousel('pause');
+          });
+          $("#carousel-play").click(function () {
+              $("#mycarousel").carousel('cycle');
+          });
       });
-      $("#carousel-pause").click(function () {
-        $("#mycarousel").carousel('pause');
-      });
-      $("#carousel-play").click(function () {
-        $("#mycarousel").carousel('cycle');
-      });
-    });
   </script>
 </body>
 
