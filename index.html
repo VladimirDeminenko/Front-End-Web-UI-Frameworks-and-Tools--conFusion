@@ -88,7 +88,8 @@
             <div class="form-group">
               <input type="email" class="form-control col-sm-3" placeholder="Email">
               <input type="password" class="form-control" placeholder="Password">
-              <label><input type="checkbox"> Remember me</label>
+              <label>
+                <input type="checkbox"> Remember me</label>
               <button type="submit" class="btn btn-info">Sign In</button>
               <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
             </div>
@@ -169,6 +170,15 @@
           <a href="#mycarousel" class="right carousel-control" role="button" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right" area-hidden="true"></span>
           </a>
+
+          <div class="btn-group" id="carouselButtons">
+            <button class="btn btn-danger btn-xs" id="carousel-pause">
+              <span class="glyphicon glyphicon-pause" area-hidden="true"></span>
+            </button>
+            <button class="btn btn-danger btn-xs" id="carousel-play">
+              <span class="glyphicon glyphicon-play" area-hidden="true"></span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -364,6 +374,19 @@
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#mycarousel").carousel({
+        interval: 2000
+      });
+      $("#carousel-pause").click(function () {
+        $("#mycarousel").carousel('pause');
+      });
+      $("#carousel-play").click(function () {
+        $("#mycarousel").carousel('cycle');
+      });
+    });
+  </script>
 </body>
 
 </html>
