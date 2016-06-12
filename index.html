@@ -84,15 +84,14 @@
           <h4 class="modal-title">Login</h4>
         </div>
         <div class="modal-body">
-          <form class="form-inline" role="form">
-            <input type="email" class="form-control" placeholder="Email">
-            <input type="password" class="form-control" placeholder="Password">
-            <div class="checkbox">
-              <label>
-                <input type="checkbox"> Remember me</label>
+          <form class="form-inline" class2="form-horizontal" role="form">
+            <div class="form-group">
+              <input type="email" class="form-control col-sm-3" placeholder="Email">
+              <input type="password" class="form-control" placeholder="Password">
+              <label><input type="checkbox"> Remember me</label>
+              <button type="submit" class="btn btn-info">Sign In</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
             </div>
-            <button type="submit" class="btn btn-info">Sign In</button>
-            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
           </form>
         </div>
       </div>
@@ -166,11 +165,9 @@
           <!-- Controls -->
           <a href="#mycarousel" class="left carousel-control" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" area-hidden="true"></span>
-            <span class="cr-only">Previous</span>
           </a>
           <a href="#mycarousel" class="right carousel-control" role="button" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right" area-hidden="true"></span>
-            <span class="cr-only">Next</span>
           </a>
         </div>
       </div>
@@ -367,14 +364,6 @@
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script>
-    $('#reserveTableForm').on('show.bs.modal', function (e) {
-      if (!confirm("If you want to see the reserve table form then click on button OK.")) {
-        return e.preventDefault(); // stops modal from being shown
-      }
-    })
-  </script>
-
 </body>
 
 </html>
